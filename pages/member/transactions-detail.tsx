@@ -1,52 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/utilities.css" />
-    <link rel="stylesheet" href="../css/sidebar.css" />
-    <link rel="stylesheet" href="../css/transactions-detail.css" />
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Transactions Detail StoreGG</title>
-  </head>
-
-  <body>
-    <!-- Transactions Detail -->
-    <section class="transactions-detail overflow-auto">
-      <section class="sidebar">
-        <div class="content pt-50 pb-30 ps-30">
-          <div class="user text-center pb-50 pe-30">
+export default function TransactionsDetail() {
+  return (
+    <section className="transactions-detail overflow-auto">
+      <section className="sidebar">
+        <div className="content pt-50 pb-30 ps-30">
+          <div className="user text-center pb-50 pe-30">
             <img
-              src="../assets/img/avatar-1.png"
+              src="/img/avatar-1.png"
               width="90"
               height="90"
-              class="img-fluid mb-20"
+              className="img-fluid mb-20"
+              alt=""
             />
-            <h2 class="fw-bold text-xl color-palette-1 m-0">Shayna Anne</h2>
-            <p class="color-palette-2 m-0">shayna@anne.com</p>
+            <h2 className="fw-bold text-xl color-palette-1 m-0">Shayna Anne</h2>
+            <p className="color-palette-2 m-0">shayna@anne.com</p>
           </div>
-          <div class="menus">
-            <div class="item mb-30">
+          <div className="menus">
+            <div className="item mb-30">
               <svg
-                class="icon me-3"
+                className="icon me-3"
                 width="25"
                 height="25"
                 viewBox="0 0 25 25"
@@ -82,17 +53,18 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <p class="item-title m-0">
+              <p className="item-title m-0">
                 <a
                   href="../member/overview.html"
-                  class="text-lg text-decoration-none"
-                  >Overview</a
+                  className="text-lg text-decoration-none"
                 >
+                  Overview
+                </a>
               </p>
             </div>
-            <div class="item active mb-30">
+            <div className="item active mb-30">
               <svg
-                class="icon me-3"
+                className="icon me-3"
                 width="25"
                 height="25"
                 viewBox="0 0 25 25"
@@ -121,17 +93,18 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <p class="item-title m-0">
+              <p className="item-title m-0">
                 <a
                   href="../member/transactions.html"
-                  class="text-lg text-decoration-none"
-                  >Transactions</a
+                  className="text-lg text-decoration-none"
                 >
+                  Transactions
+                </a>
               </p>
             </div>
-            <div class="item mb-30">
+            <div className="item mb-30">
               <svg
-                class="icon me-3"
+                className="icon me-3"
                 width="25"
                 height="25"
                 viewBox="0 0 25 25"
@@ -146,13 +119,15 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <p class="item-title m-0">
-                <a href="" class="text-lg text-decoration-none">Messages</a>
+              <p className="item-title m-0">
+                <a href="" className="text-lg text-decoration-none">
+                  Messages
+                </a>
               </p>
             </div>
-            <div class="item mb-30">
+            <div className="item mb-30">
               <svg
-                class="icon me-3"
+                className="icon me-3"
                 width="25"
                 height="25"
                 viewBox="0 0 25 25"
@@ -186,13 +161,15 @@
                   </clipPath>
                 </defs>
               </svg>
-              <p class="item-title m-0">
-                <a href="" class="text-lg text-decoration-none">Card</a>
+              <p className="item-title m-0">
+                <a href="/" className="text-lg text-decoration-none">
+                  Card
+                </a>
               </p>
             </div>
-            <div class="item mb-30">
+            <div className="item mb-30">
               <svg
-                class="icon me-3"
+                className="icon me-3"
                 width="25"
                 height="25"
                 viewBox="0 0 25 25"
@@ -226,13 +203,15 @@
                   </clipPath>
                 </defs>
               </svg>
-              <p class="item-title m-0">
-                <a href="" class="text-lg text-decoration-none">Rewards</a>
+              <p className="item-title m-0">
+                <a href="/" className="text-lg text-decoration-none">
+                  Rewards
+                </a>
               </p>
             </div>
-            <div class="item mb-30">
+            <div className="item mb-30">
               <svg
-                class="icon me-3"
+                className="icon me-3"
                 width="25"
                 height="25"
                 viewBox="0 0 25 25"
@@ -266,17 +245,18 @@
                   </clipPath>
                 </defs>
               </svg>
-              <p class="item-title m-0">
+              <p className="item-title m-0">
                 <a
                   href="../member/edit-profile.html"
-                  class="text-lg text-decoration-none"
-                  >Settings</a
+                  className="text-lg text-decoration-none"
                 >
+                  Settings
+                </a>
               </p>
             </div>
-            <div class="item mb-30">
+            <div className="item mb-30">
               <svg
-                class="icon me-3"
+                className="icon me-3"
                 width="25"
                 height="25"
                 viewBox="0 0 25 25"
@@ -298,21 +278,25 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <p class="item-title m-0">
-                <a href="" class="text-lg text-decoration-none">Log Out</a>
+              <p className="item-title m-0">
+                <a href="" className="text-lg text-decoration-none">
+                  Log Out
+                </a>
               </p>
             </div>
           </div>
         </div>
       </section>
-      <main class="main-wrapper">
-        <div class="ps-lg-0">
-          <h2 class="text-4xl fw-bold color-palette-1 mb-30">Details #GG001</h2>
-          <div class="details">
-            <div class="main-content main-content-card overflow-auto">
-              <section class="checkout mx-auto">
+      <main className="main-wrapper">
+        <div className="ps-lg-0">
+          <h2 className="text-4xl fw-bold color-palette-1 mb-30">
+            Details #GG001
+          </h2>
+          <div className="details">
+            <div className="main-content main-content-card overflow-auto">
+              <section className="checkout mx-auto">
                 <div
-                  class="
+                  className="
                     d-flex
                     flex-row
                     align-items-center
@@ -320,29 +304,30 @@
                     mb-30
                   "
                 >
-                  <div class="game-checkout d-flex flex-row align-items-center">
-                    <div class="pe-4">
-                      <div class="cropped">
+                  <div className="game-checkout d-flex flex-row align-items-center">
+                    <div className="pe-4">
+                      <div className="cropped">
                         <img
-                          src="../assets/img/Thumbnail-3.png"
+                          src="/img/Thumbnail-3.png"
                           width="200"
                           height="130"
-                          class="img-fluid"
+                          className="img-fluid"
                           alt=""
                         />
                       </div>
                     </div>
                     <div>
-                      <p class="fw-bold text-xl color-palette-1 mb-10">
-                        Mobile Legends:<br />
+                      <p className="fw-bold text-xl color-palette-1 mb-10">
+                        Mobile Legends:
+                        <br />
                         The New Battle 2021
                       </p>
-                      <p class="color-palette-2 m-0">Category: Mobile</p>
+                      <p className="color-palette-2 m-0">Category: Mobile</p>
                     </div>
                   </div>
                   <div>
                     <p
-                      class="
+                      className="
                         fw-medium
                         text-center
                         label
@@ -356,59 +341,66 @@
                   </div>
                 </div>
                 <hr />
-                <div class="purchase pt-30">
-                  <h2 class="fw-bold text-xl color-palette-1 mb-20">
+                <div className="purchase pt-30">
+                  <h2 className="fw-bold text-xl color-palette-1 mb-20">
                     Purchase Details
                   </h2>
-                  <p class="text-lg color-palette-1 mb-20">
+                  <p className="text-lg color-palette-1 mb-20">
                     Your Game ID
-                    <span class="purchase-details">masayoshizero</span>
+                    <span className="purchase-details">masayoshizero</span>
                   </p>
-                  <p class="text-lg color-palette-1 mb-20">
-                    Order ID <span class="purchase-details">#GG001</span>
+                  <p className="text-lg color-palette-1 mb-20">
+                    Order ID <span className="purchase-details">#GG001</span>
                   </p>
-                  <p class="text-lg color-palette-1 mb-20">
-                    Item <span class="purchase-details">250 Diamonds</span>
+                  <p className="text-lg color-palette-1 mb-20">
+                    Item <span className="purchase-details">250 Diamonds</span>
                   </p>
-                  <p class="text-lg color-palette-1 mb-20">
-                    Price <span class="purchase-details">Rp 42.280.500</span>
+                  <p className="text-lg color-palette-1 mb-20">
+                    Price{" "}
+                    <span className="purchase-details">Rp 42.280.500</span>
                   </p>
-                  <p class="text-lg color-palette-1 mb-20">
-                    Tax (10%) <span class="purchase-details">Rp 4.228.000</span>
+                  <p className="text-lg color-palette-1 mb-20">
+                    Tax (10%){" "}
+                    <span className="purchase-details">Rp 4.228.000</span>
                   </p>
-                  <p class="text-lg color-palette-1 mb-20">
+                  <p className="text-lg color-palette-1 mb-20">
                     Total
-                    <span class="purchase-details color-palette-4"
-                      >Rp 55.000.600</span
-                    >
+                    <span className="purchase-details color-palette-4">
+                      Rp 55.000.600
+                    </span>
                   </p>
                 </div>
-                <div class="payment pt-10 pb-10">
-                  <h2 class="fw-bold text-xl color-palette-1 mb-20">
+                <div className="payment pt-10 pb-10">
+                  <h2 className="fw-bold text-xl color-palette-1 mb-20">
                     Payment Informations
                   </h2>
-                  <p class="text-lg color-palette-1 mb-20">
+                  <p className="text-lg color-palette-1 mb-20">
                     Your Account Name
-                    <span class="purchase-details">Masayoshi Angga Zero</span>
+                    <span className="purchase-details">
+                      Masayoshi Angga Zero
+                    </span>
                   </p>
-                  <p class="text-lg color-palette-1 mb-20">
-                    Type <span class="payment-details">Worldwide Transfer</span>
+                  <p className="text-lg color-palette-1 mb-20">
+                    Type{" "}
+                    <span className="payment-details">Worldwide Transfer</span>
                   </p>
-                  <p class="text-lg color-palette-1 mb-20">
-                    Bank Name <span class="payment-details">Mandiri</span>
+                  <p className="text-lg color-palette-1 mb-20">
+                    Bank Name <span className="payment-details">Mandiri</span>
                   </p>
-                  <p class="text-lg color-palette-1 mb-20">
+                  <p className="text-lg color-palette-1 mb-20">
                     Bank Account Name
-                    <span class="payment-details">PT Store GG Indonesia</span>
+                    <span className="payment-details">
+                      PT Store GG Indonesia
+                    </span>
                   </p>
-                  <p class="text-lg color-palette-1 mb-20">
+                  <p className="text-lg color-palette-1 mb-20">
                     Bank Number
-                    <span class="payment-details">1800 - 9090 - 2021</span>
+                    <span className="payment-details">1800 - 9090 - 2021</span>
                   </p>
                 </div>
-                <div class="d-md-block d-flex flex-column w-100">
+                <div className="d-md-block d-flex flex-column w-100">
                   <a
-                    class="
+                    className="
                       btn btn-whatsapp
                       rounded-pill
                       fw-medium
@@ -416,10 +408,11 @@
                       border-0
                       text-lg
                     "
-                    href="#"
+                    href="/"
                     role="button"
-                    >WhatsApp ke Admin</a
                   >
+                    WhatsApp ke Admin
+                  </a>
                 </div>
               </section>
             </div>
@@ -427,11 +420,5 @@
         </div>
       </main>
     </section>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+  );
+}

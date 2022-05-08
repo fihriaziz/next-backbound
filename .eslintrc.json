@@ -18,6 +18,8 @@
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ],
     "react/react-in-jsx-scope": "off",
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    "jsx-a11y/anchor-is-valid": "off",
+    "quotes": [2, "double", { "avoidEscape": true }]
   }
 }
