@@ -20,6 +20,7 @@
     "react/react-in-jsx-scope": "off",
     "linebreak-style": 0,
     "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-props-no-spreading": "off",
     "quotes": [2, "double", { "avoidEscape": true }]
   }
 }
