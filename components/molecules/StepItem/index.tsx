@@ -1,5 +1,5 @@
-interface StepItemProps {
-  icon: "step1" | "step2" | "step3";
+export interface StepItemProps {
+  icon: "/icon/step1.svg" | "/icon/step2.svg" | "/icon/step3.svg";
   title: string;
   desc1: string;
   desc2: string;
@@ -10,7 +10,7 @@ export default function StepItem(props: StepItemProps) {
     <div className="col-lg-4">
       <div className="card feature-card border-0">
         <img
-          src={`/icon/${icon}.svg`}
+          src={icon}
           width={80}
           height={80}
           className="mb-30"
